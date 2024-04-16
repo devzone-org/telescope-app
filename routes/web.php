@@ -8,5 +8,5 @@ Route::get('/', function () {
 });
 
 Route::any('{any}', function () {
-    return response("Ok", 200)->header('Content-Type', 'text/html')
+    return response("Ok", 200)->header('Content-Type', 'text/html');
 })->where('any', '.*');
